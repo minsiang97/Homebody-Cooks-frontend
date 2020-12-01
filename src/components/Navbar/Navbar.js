@@ -39,7 +39,7 @@ const WebNavbar = () => {
     return (
         <>
             <Navbar expand="lg" className = "navigation-bar" variant = "dark">
-            <Navbar.Brand  href="/" className = "title m-0">HomeBody Cooks</Navbar.Brand>
+            <Navbar.Brand  href="/" className ="nav-title m-0">HomeBody Cooks</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             {isLoggedin ?
             <Navbar.Collapse id="responsive-navbar-nav">

@@ -41,30 +41,21 @@
     outline: none;
 }
 
-.nav-links {
-    width: 10vw;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.nav-links:hover {
-    border-bottom: 2px solid #0D1F2D;
+.reactLink:hover {
+    color: #0D1F2D !important; 
     cursor: pointer;
 }
 
-.title{
+.nav-title{
     font-family: 'Bree Serif', serif;
     font-size: 24px;
     font-weight: bolder;
     color: white;
 }
 
-.title:hover {
+.nav-title:hover {
     text-decoration: none;
-    color: #0D1F2D;
+    color: #0D1F2D !important;
 }
 
  a {
@@ -80,6 +71,7 @@ a:hover {
 
 .reactLink {
     font-weight: bolder;
+    color: white !important;
 }
 
 .reactLink:hover {
