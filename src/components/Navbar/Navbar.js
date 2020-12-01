@@ -39,10 +39,10 @@ const WebNavbar = () => {
     return (
         <>
             <Navbar expand="lg" className = "navigation-bar" variant = "dark">
-            <Navbar  href="#home"><Link className = "title m-0" to="/">HomeBody Cooks</Link></Navbar>
+            <Navbar.Brand  href="/" className = "title m-0">HomeBody Cooks</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            {isLoggedin ?
             <Navbar.Collapse id="responsive-navbar-nav">
-                {isLoggedin ?
                 <Nav className="ml-auto align-items-center nav">
                     <Link className ="reactLink" to = "/recipes/show">Meals</Link>
                     <Link className ="reactLink" to = "/plans">Plans</Link>
@@ -50,7 +50,9 @@ const WebNavbar = () => {
                     <Link className ="reactLink"to = "/me">Profile</Link>
                     <Link><button onClick={LogOut}>Log out</button></Link>
                 </Nav>
+            </Navbar.Collapse>
                         :
+            <Navbar.Collapse id="responsive-navbar-nav">            
                 <Nav className="ml-auto align-items-center nav">
                     <Link className ="reactLink" to = "/recipes/show">Meals</Link>
                     <Link className ="reactLink" to = "/plans">Plans</Link>
@@ -58,9 +60,10 @@ const WebNavbar = () => {
                     <Link><button onClick={LoginHandleClick}>Log In</button></Link>
                     <Link><button onClick={SignupHandleClick}>Sign Up</button></Link>
                 </Nav>
-                    }
+                    
                 
             </Navbar.Collapse>
+            }
             </Navbar>
 
         </>
