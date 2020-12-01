@@ -44,19 +44,19 @@ const WebNavbar = () => {
             {isLoggedin ?
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto align-items-center nav">
-                    <Nav.Link className ="reactLink" to = "/recipes/show">Meals</Nav.Link>
-                    <Nav.Link className ="reactLink" to = "/plans">Plans</Nav.Link>
-                    <Nav.Link className ="reactLink" to = "/HowTo">How-To</Nav.Link>
-                    <Nav.Link className ="reactLink"to = "/me">Profile</Nav.Link>
+                    <Link className ="reactLink" to = "/recipes/show">Meals</Link>
+                    <Link className ="reactLink" to = "/plans">Plans</Link>
+                    <Link className ="reactLink" to = "/HowTo">How-To</Link>
+                    <Link className ="reactLink"to = "/me">Profile</Link>
                     <Link><button onClick={LogOut}>Log out</button></Link>
                 </Nav>
             </Navbar.Collapse>
                         :
             <Navbar.Collapse id="responsive-navbar-nav">            
                 <Nav className="ml-auto align-items-center nav">
-                    <Nav.Link className ="reactLink" to = "/recipes/show">Meals</Nav.Link>
-                    <Nav.Link className ="reactLink" to = "/plans">Plans</Nav.Link>
-                    <Nav.Link className ="reactLink" to = "/HowTo">How-To</Nav.Link>        
+                    <Link className ="reactLink" to = "/recipes/show">Meals</Link>
+                    <Link className ="reactLink" to = "/plans">Plans</Link>
+                    <Link className ="reactLink" to = "/HowTo">How-To</Link>        
                     <Link><button onClick={LoginHandleClick}>Log In</button></Link>
                     <Link><button onClick={SignupHandleClick}>Sign Up</button></Link>
                 </Nav>
