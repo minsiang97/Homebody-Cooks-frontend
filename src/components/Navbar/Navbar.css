@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 .navigation-bar {
-    padding: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #EDB015;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
@@ -23,6 +21,10 @@
 
 @media (max-width: 991px){
     .reactLink{
+        margin-bottom: 20px;
+    }
+
+    .nav button {
         margin-bottom: 20px;
     }
 }
